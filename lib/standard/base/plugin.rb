@@ -59,6 +59,10 @@ module Standard::Base
         "ruby-3.2.yml"
       elsif desired_version < Gem::Version.new("3.4")
         "ruby-3.3.yml"
+      elsif desired_version < Gem::Version.new("4.0")
+        "ruby-3.4.yml"
+      elsif desired_version < Gem::Version.new("4.1")
+        "ruby-4.0.yml"
       else
         default
       end
